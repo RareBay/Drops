@@ -100,7 +100,7 @@ const Home = (props) => {
           >
             <a href="#tokenomics">Tokenomics</a>
             <a href="#roadmap">Roadmap</a>
-            <a href="#Airdrop">Airdrop</a>
+            <a href="#airdrop">Airdrop</a>
           </div>
         }
       />
@@ -163,7 +163,7 @@ position="top-center"
             color: "white"
             }}
                 />
-<Page id="Airdrop" />
+<Page id="airdrop" />
 </>
             )}
          
