@@ -112,8 +112,7 @@ const Home = (props) => {
                   <span>WHALES TOKEN</span>
                 </h3>
               </div>
-              <div className="mints-container42">
-      </div>  
+              BITCOIN-LIKE AND FULLY DECENTRALIZED PROTOCOL LAYER MADE BY WHALES, FOR WHALES. BUILT ON CORE. A BITCOIN HASH POWRED AND EVM COMPATIBLE BLOCKCHAIN USING THE SATOSHI+ CONSESUS MECHANISIM TO ENSURE A SECURE, SCALABLE AND DECENTRALIZED ENVIRONMENT.waESLwkah
             </div>
             {!user? (
               <>
