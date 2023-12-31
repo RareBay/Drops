@@ -6,9 +6,6 @@ import React from "react";
 export default function MyApp({ Component: Component, pageProps: pageProps }) {
   return (
     <ThirdwebProvider
-    supportedWallets={
-     OKXWallet 
-    }
       activeChain={CoreBlockchain}
       clientId="cc3b7731ad9935953abe4a625abea530" // You can get a client id from dashboard settings
     >
