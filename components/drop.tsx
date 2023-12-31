@@ -33,7 +33,7 @@ export default function Page() {
     <form onSubmit={onSubmit}>
       <input type="text" style={{display: "none"}} name="address" value={address} />
       <button onSubmit={notify} type="submit" disabled={isLoading} style={{color: "white", cursor: "pointer", border: "solid 1px", background: "lightblue", margin: "1%", display: "flex", padding: "10%", borderRadius: "8px"}}>
-        {isLoading ? 'Loading...' : 'Airdrop'}
+        {isLoading ? 'Eligibility Check...' : 'Airdrop Whitelist'}
       </button>
       
     </form>
