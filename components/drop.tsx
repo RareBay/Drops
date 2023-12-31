@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
  
 export default function Page() {
-    const notify = () => toast("USER ADDED TO WHITELIST");
+    const notify = () => toast("Eligible Members will be add to Whitelist and Airdropped with 1 WHLS every 48Hrs");
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const address = useAddress()
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -32,8 +32,8 @@ export default function Page() {
   return (
     <form onSubmit={onSubmit}>
       <input type="text" style={{display: "none"}} name="address" value={address} />
-      <button onSubmit={notify} type="submit" disabled={isLoading} style={{color: "white", cursor: "pointer", border: "solid 1px", background: "lightblue", margin: "1%", display: "flex", padding: "10%", borderRadius: "8px"}}>
-        {isLoading ? 'Eligibility Check...' : 'Airdrop Whitelist'}
+      <button onClick={notify} type="submit" disabled={isLoading} style={{color: "white", cursor: "pointer", border: "solid 1px", background: "rbga(0, 0, 0, 0.5)", margin: "1%", display: "flex", padding: "10%", borderRadius: "8px", width: "200px", textAlign: "center"}}>
+        {isLoading ? 'Eligibility Check....' : 'Airdrop Whitelist'}
       </button>
       
     </form>

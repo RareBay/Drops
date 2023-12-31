@@ -44,6 +44,9 @@ const Home = (props) => {
         </Head>
         <section className="home-hero">
           <video   
+          style={
+            {position: "fixed"}
+          }
             src="https://bafybeidbia5v5q7toetkgqgomh6ujr5owibp4efgnc5b72panpjhsrk3jq.ipfs.nftstorage.link/ipfs/bafybeidbia5v5q7toetkgqgomh6ujr5owibp4efgnc5b72panpjhsrk3jq/Untitled.mp4"
             loop
             muted
@@ -73,14 +76,7 @@ const Home = (props) => {
   </div>
   }
         menuCloseButton={  <div className="home-hamburger">
-        <svg viewBox="0 0 1024 1024" className="home-icon">
-      <path d="M810.667 725.333h-298.667c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h298.667c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
-      <path d="M810.667 426.667h-298.667c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h298.667c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
-      <path d="M810.667 128h-298.667c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h298.667c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
-      <path d="M320 810.667c0 58.91-47.756 106.667-106.667 106.667s-106.667-47.756-106.667-106.667c0-58.91 47.756-106.667 106.667-106.667 58.91 0 106.667 47.756 106.667 106.667z"></path>
-      <path d="M320 512c0 58.91-47.756 106.667-106.667 106.667s-106.667-47.756-106.667-106.667c0-58.91 47.756-106.667 106.667-106.667 58.91 0 106.667 47.756 106.667 106.667z"></path>
-      <path d="M320 213.333c0 58.91-47.756 106.667-106.667 106.667s-106.667-47.756-106.667-106.667c0-58.91 47.756-106.667 106.667-106.667 58.91 0 106.667 47.756 106.667 106.667z"></path>
-    </svg>
+       x
       </div>}
       changeMenuOn="500px"
       largeMenuClassName="large-menu-classname"
@@ -90,11 +86,14 @@ const Home = (props) => {
           style={{
             color: "white",
             width: "100%",
-            margin: "5%", 
-            postion: "fixed",
             display: "flex",
-            gap: "20px",
-            fontSize: "12px"
+            gap: "15px",
+            fontSize: "12px",
+            backgroundColor: "black",
+            padding: "8%",
+            marginRight: "5%",
+            marginTop: "1%"
+
           }}
                 
           >
@@ -108,10 +107,9 @@ const Home = (props) => {
           <div className="home-hero-content">
             <div className="home-header-container">
               <div className="home-header">
-                <h1 className="home-heading">
+                <h3 className="home-heading">
                   <span>WHALES TOKEN</span>
-                  <br></br>
-                </h1>
+                </h3>
               </div>
               <p id="about" className="home-caption">
                 BITCOIN-LIKE AND FULLY DECENTRALIZED PROTOCOL LAYER MADE BY
@@ -139,7 +137,6 @@ const Home = (props) => {
             color: "white"
             }}
                 />
-                <br></br>
               </span>
             </button>
               </>
@@ -148,26 +145,18 @@ const Home = (props) => {
 <ToastContainer
 position="top-center"
 />
-<ConnectWallet
-              theme={"dark"}
-              btnTitle={"CONNECT WALLET"}
-              switchToActiveChain={true}
-              modalSize={"compact"}
-              welcomeScreen={{
-                title: "WHALES RULE",
-                subtitle: "CONNECT YOUR WHALE WALLET",
-              }}
-              style={{background: "transparent",
-            textShadow: "gray 1px 1px 3px",
-            border: "white 1px solid",
-            color: "white"
-            }}
-                />
 <Page id="airdrop" />
+<p style={{color: "gray", fontStyle: "italic"}}>
+               WHLS Airdrop will be done to All Eligible Members, Eligibility Depends on Community Contributions and NFT Ownership.
+               1 WHLS Every 48 Hrs for New Members and Whale NFT Owners.
+              </p>
+                
+
 </>
             )}
          
           </div>
+
         </section>
         <h1 id="tokenomics" className="home-heading1">
           WHALENOMICS
@@ -484,6 +473,7 @@ document.addEventListener("DOMContentLoaded", function() {
             width: 100%;
             height: 900px;
             display: flex;
+            marginTop: 10%;
             z-index: 1;
             position: relative;
             align-items: center;
@@ -495,11 +485,10 @@ document.addEventListener("DOMContentLoaded", function() {
             top: 0px;
             left: 0px;
             right: 0px;
-            width: 1919px;
-            filter: opacity(0.2) blur(5px);
-            height: 1076px;
+            width: 1500px;
+            filter: opacity(0.4) blur(5px);
+            height: 100%;
             margin: auto;
-            position: absolute;
             object-fit: cover;
           }
           .home-navbar {
@@ -531,6 +520,7 @@ document.addEventListener("DOMContentLoaded", function() {
             cursor: pointer;
             height: 18px;
             display: flex;
+            color: white;
             transition: 0.3s;
             align-items: center;
             position: relative;
@@ -645,14 +635,23 @@ document.addEventListener("DOMContentLoaded", function() {
             flex-direction: column;
           }
           .home-heading {
-            font-size: 90px;
+            font-size: 70px;
             max-width: 790px;
-            background: -webkit-linear-gradient(#fff6, #9981);
+            background: -webkit-linear-gradient(#fff6, rgba(0, 0, 0, 0.5));
             font-style: normal;
             text-align: center;
             font-weight: 500;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+          }
+          .home-caption11 {
+            color: rgb(255, 255, 255);
+            width: 702px;
+            font-size: 12px;
+            font-style: italic;
+            max-width: 600px;
+            text-align: center;
+            line-height: 15px;
           }
           .home-caption {
             color: rgb(255, 255, 255);
@@ -670,7 +669,6 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           .home-heading1 {
             color: rgb(128, 128, 128);
-            margin-bottom: var(--dl-space-space-unit);
             textShadow: "orange 1px 1px 10px"
           }
           .home-stat {
