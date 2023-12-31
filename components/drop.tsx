@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
  
 export default function Page() {
-    const notify = () => toast("Eligible Members will be add to Whitelist and Airdropped with 1 WHLS every 48Hrs");
+    const notify = () => toast("Eligible Members will be added to Whitelist and Airdropped with 0.5 WHLS every 48Hrs");
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const address = useAddress()
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
