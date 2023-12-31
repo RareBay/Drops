@@ -146,7 +146,7 @@ const Home = (props) => {
 position="top-center"
 />
 <Page id="airdrop" />
-<p style={{color: "gray", fontStyle: "italic"}}>
+<p style={{color: "gray", fontStyle: "italic", fontSize: "12px"}}>
                WHLS Airdrop will be done to All Eligible Members, Eligibility Depends on Community Contributions and NFT Ownership.
                1 WHLS Every 48 Hrs for New Members and Whale NFT Owners.
               </p>
