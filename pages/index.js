@@ -100,7 +100,7 @@ const Home = (props) => {
           >
             <a href="#tokenomics">Tokenomics</a>
             <a href="#roadmap">Roadmap</a>
-            <a href="#airdrop">Airdrop</a>
+            <a href="https://boredwhalesyachtclub.org/#mint">Mint</a>
           </div>
         }
       />
